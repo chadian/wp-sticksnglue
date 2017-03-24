@@ -1,0 +1,8 @@
+# mysql backups
+mysql/
+
+# docker wp mounted volumes into wp-content
+plugins/
+uploads/
+
+node_modules
