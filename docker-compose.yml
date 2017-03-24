@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+
+  wordpress:
+    image: wordpress
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: example
+    volumes:
+      - .:/var/www/html/wp-content/themes/sticksnglue
+      - ./plugins:/var/www/html/wp-content/plugins
+      - ./uploads:/var/www/html/wp-content/uploads
+
+  mysql:
+    image: mariadb
+    ports:
+      - 33306:3306
+    environment:
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: example
