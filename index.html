@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Sticks &#039;n&#039; Glue</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://localhost:8080/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://localhost:8080/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Sticks &#039;n&#039; Glue &raquo; Feed" href="http://localhost:8080/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sticks &#039;n&#039; Glue &raquo; Comments Feed" href="http://localhost:8080/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost:8080\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='http://localhost:8080/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-solarized-light-css'  href='http://localhost:8080/wp-content/plugins/crayon-syntax-highlighter/themes/solarized-light/solarized-light.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-inconsolata-css'  href='http://localhost:8080/wp-content/plugins/crayon-syntax-highlighter/fonts/inconsolata.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='http://localhost:8080/wp-content/themes/twentytwelve/style.css?ver=4.7.3' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://localhost:8080/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-36856449-1', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='http://localhost:8080/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://localhost:8080/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/localhost:8080\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://localhost:8080/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta'></script>
+<link rel='https://api.w.org/' href='http://localhost:8080/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost:8080/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost:8080/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.3" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+			<style type="text/css" id="twentytwelve-header-css">
+			.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px); /* IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+		</style>
+	</head>
+
+<body class="home blog custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="http://localhost:8080/" title="Sticks &#039;n&#039; Glue" rel="home">Sticks &#039;n&#039; Glue</a></h1>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="nav-menu"><ul>
+<li class="current_page_item"><a href="http://localhost:8080/">Home</a></li><li class="page_item page-item-2"><a href="http://localhost:8080/about/">About</a></li>
+</ul></div>
+		</nav><!-- #site-navigation -->
+
+				<a href="http://localhost:8080/"><img src="http://sticksnglue.com/wordpress/wp-content/uploads/2012/12/copy-wordpress-logo-quick.jpg" class="header-image" width="1000" height="288" alt="Sticks &#039;n&#039; Glue" /></a>
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+		
+										
+	<article id="post-244" class="post-244 post type-post status-publish format-standard hentry category-tools">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://localhost:8080/quickly-serve-html-files-from-node-php-or-python/" rel="bookmark">Quickly serve html files from node, php, or python</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://localhost:8080/quickly-serve-html-files-from-node-php-or-python/#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>There will be times where you need to server some files through a browser and instead of setting a local instance of apache or MAMP, it might just be easier to use something in the command-line. I would recommend the node option as it seems to have a few more options. Mac ships with python and PHP which make those easier in some cases. Also, the PHP server will handle php files along with standard html.</p>
+<h2>Node</h2>
+<p>First install 
+			<span id="crayon-58c457972a2a0034347176" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">http</span><span class="crayon-o">-</span><span class="crayon-v">server</span></span></span> globally via npm.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c457972a2d0529200228" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c457972a2d0529200228-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c457972a2d0529200228-1"><span class="crayon-e">npm </span><span class="crayon-v">install</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">g</span><span class="crayon-h"> </span><span class="crayon-v">http</span><span class="crayon-o">-</span><span class="crayon-v">server</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p>Then it&#8217;s as easy as</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c457972a30e011701870" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c457972a30e011701870-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c457972a30e011701870-1"><span class="crayon-v">http</span><span class="crayon-o">-</span><span class="crayon-v">server</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p></p>
+<h2>PHP</h2>
+<p>
+			<span id="crayon-58c457972a31a853694926" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">php</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-v">S</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">domain</span><span class="crayon-o">&gt;</span><span class="crayon-o">:</span><span class="crayon-o">&lt;</span><span class="crayon-v">port</span><span class="crayon-o">&gt;</span></span></span></p>
+<p>ie: 
+			<span id="crayon-58c457972a321254636355" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">php</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">s</span><span class="crayon-h"> </span><span class="crayon-v">localhost</span><span class="crayon-o">:</span><span class="crayon-cn">8000</span></span></span></p>
+<h2>Python</h2>
+<p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c457972a328704182225" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c457972a328704182225-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c457972a328704182225-1"><span class="crayon-v">python</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">m</span><span class="crayon-h"> </span><span class="crayon-v">SimpleHTTPServer</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">port</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p>ie: 
+			<span id="crayon-58c457972a32f087722475" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">python</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">m</span><span class="crayon-h"> </span><span class="crayon-i">SimpleHTTPServer</span><span class="crayon-h"> </span><span class="crayon-cn">8000</span></span></span></p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://localhost:8080/category/tools/" rel="category tag">Tools</a> on <a href="http://localhost:8080/quickly-serve-html-files-from-node-php-or-python/" title="11:48 pm" rel="bookmark"><time class="entry-date" datetime="2016-05-03T23:48:21+00:00">May 3, 2016</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://localhost:8080/author/chadcarbert/" title="View all posts by chadcarbert" rel="author">chadcarbert</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-239" class="post-239 post type-post status-publish format-standard hentry category-learning tag-javascript">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://localhost:8080/js-puzzles/" rel="bookmark">js puzzle</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://localhost:8080/js-puzzles/#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>I came across a <a href="https://twitter.com/weitzelb/status/718623065480019968" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://twitter.com/weitzelb/status/718623065480019968', 'tweet');">tweet</a> that had this bit of puzzling sample code:</p>
+<p><img class="alignnone size-full wp-image-240" src="http://sticksnglue.com/wordpress/wp-content/uploads/2016/04/weitzelb_2016-Apr-08.jpg" alt="js puzzle" width="238" height="397" srcset="http://localhost:8080/wp-content/uploads/2016/04/weitzelb_2016-Apr-08.jpg 238w, http://localhost:8080/wp-content/uploads/2016/04/weitzelb_2016-Apr-08-180x300.jpg 180w" sizes="(max-width: 238px) 100vw, 238px" /></p>
+<p>Most of this made sense to me, except for the part of the properties being assigned and then either accessible or being undefined. I had a hunch that it was related to something I blogged about <a href="http://sticksnglue.com/wordpress/be-careful-with-those-primitives-types/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://sticksnglue.com/wordpress/be-careful-with-those-primitives-types/', 'previously');">previously</a>.</p>
+<p>Turns out when using the 
+			<span id="crayon-58c457973362e976640939" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-sy">.</span><span class="crayon-v">call</span></span></span> it&#8217;s actually returning an object. That first line is the equivalent of 
+			<span id="crayon-58c457973363c026068409" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">five</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">Number</span><span class="crayon-sy">(</span><span class="crayon-cn">5</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></span></span> . This means:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c4579733643856174739" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c4579733643856174739-1">1</div><div class="crayon-num" data-line="crayon-58c4579733643856174739-2">2</div><div class="crayon-num" data-line="crayon-58c4579733643856174739-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c4579733643856174739-1"><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">five</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">Number</span><span class="crayon-sy">(</span><span class="crayon-cn">5</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-58c4579733643856174739-2"><span class="crayon-e">five </span><span class="crayon-r">instanceof</span><span class="crayon-h"> </span><span class="crayon-v">Number</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// true</span></div><div class="crayon-line" id="crayon-58c4579733643856174739-3"><span class="crayon-e">typeof </span><span class="crayon-v">five</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// 'object'</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<p>While it&#8217;s an object, you can add your properties but as soon as it&#8217;s autoboxed/primitive wrapped by the 
+			<span id="crayon-58c457973364a301547716" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-o">++</span></span></span> , it loses it&#8217;s abilities to hold those properties. This is shown by the fact that the 
+			<span id="crayon-58c4579733657213976566" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-r">instanceof</span></span></span> and 
+			<span id="crayon-58c4579733691980811308" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">typeof</span></span></span> values are now different:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c457973369a184522296" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c457973369a184522296-1">1</div><div class="crayon-num" data-line="crayon-58c457973369a184522296-2">2</div><div class="crayon-num" data-line="crayon-58c457973369a184522296-3">3</div><div class="crayon-num" data-line="crayon-58c457973369a184522296-4">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c457973369a184522296-1"><span class="crayon-c">// ... continuing from previous example</span></div><div class="crayon-line" id="crayon-58c457973369a184522296-2"><span class="crayon-v">five</span><span class="crayon-o">++</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// is now 6</span></div><div class="crayon-line" id="crayon-58c457973369a184522296-3"><span class="crayon-e">five </span><span class="crayon-r">instanceof</span><span class="crayon-h"> </span><span class="crayon-v">Number</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// false</span></div><div class="crayon-line" id="crayon-58c457973369a184522296-4"><span class="crayon-e">typeof </span><span class="crayon-v">five</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// 'number'</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<p>The rest of the puzzle is playing with the timing of return values and the difference of an assignment from 
+			<span id="crayon-58c45797336a2172521139" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">number</span><span class="crayon-o">++</span></span></span> and 
+			<span id="crayon-58c45797336a8229942567" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-o">++</span><span class="crayon-v">number</span></span></span>.</p>
+<p>At least that&#8217;s the way I understand it, let me know if I&#8217;ve missed anything.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://localhost:8080/category/learning/" rel="category tag">Learning</a> and tagged <a href="http://localhost:8080/tag/javascript/" rel="tag">javascript</a> on <a href="http://localhost:8080/js-puzzles/" title="11:12 pm" rel="bookmark"><time class="entry-date" datetime="2016-04-09T23:12:37+00:00">April 9, 2016</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://localhost:8080/author/chadcarbert/" title="View all posts by chadcarbert" rel="author">chadcarbert</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-236" class="post-236 post type-post status-publish format-standard hentry category-bugs-fixes category-learning category-tools tag-dom tag-javascript tag-phantomjs">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://localhost:8080/phantomjs-1-9-and-keyboardevent/" rel="bookmark">PhantomJS 1.9 and KeyboardEvent</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://localhost:8080/phantomjs-1-9-and-keyboardevent/#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>PhantomJS is awesome and one common use case is to use it as a headless browser for running a test suite. I noticed that I was getting different results in my tests where code was relying on fabricating a KeyboardEvent and dispatching it on an element. Well it looks like <a href="https://github.com/ariya/phantomjs/issues/11289#issuecomment-45428729" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/ariya/phantomjs/issues/11289#issuecomment-45428729', 'others have noticed');">others have noticed</a> that some of their events are missing, too. One <a href="https://github.com/ariya/phantomjs/issues/11289#issuecomment-38880333" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/ariya/phantomjs/issues/11289#issuecomment-38880333', 'proposed solution');">proposed solution</a> controls the type of event that is dispatched, but in all other cases I am pretty happy to use 
+			<span id="crayon-58c4579733b4d617297468" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">KeyboardEvent</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></span></span> , I would prefer not to write special code just to appease my tests.</p>
+<p>As a workaround I did this:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c4579733b59549392533" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c4579733b59549392533-1">1</div><div class="crayon-num" data-line="crayon-58c4579733b59549392533-2">2</div><div class="crayon-num" data-line="crayon-58c4579733b59549392533-3">3</div><div class="crayon-num" data-line="crayon-58c4579733b59549392533-4">4</div><div class="crayon-num" data-line="crayon-58c4579733b59549392533-5">5</div><div class="crayon-num" data-line="crayon-58c4579733b59549392533-6">6</div><div class="crayon-num" data-line="crayon-58c4579733b59549392533-7">7</div><div class="crayon-num" data-line="crayon-58c4579733b59549392533-8">8</div><div class="crayon-num" data-line="crayon-58c4579733b59549392533-9">9</div><div class="crayon-num" data-line="crayon-58c4579733b59549392533-10">10</div><div class="crayon-num" data-line="crayon-58c4579733b59549392533-11">11</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c4579733b59549392533-1"><span class="crayon-c">// in test (ie: test setup)</span></div><div class="crayon-line" id="crayon-58c4579733b59549392533-2"><span class="crayon-st">if</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">_phantom</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-58c4579733b59549392533-3"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-v">KeyboardEvent</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-v">eventString</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-58c4579733b59549392533-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">keyboardEvent</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">document</span><span class="crayon-sy">.</span><span class="crayon-e">createEvent</span><span class="crayon-sy">(</span><span class="crayon-s">'KeyboardEvent'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-58c4579733b59549392533-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">keyboardEvent</span><span class="crayon-sy">.</span><span class="crayon-e">initKeyboardEvent</span><span class="crayon-sy">(</span><span class="crayon-v">eventString</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">true</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">true</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-r">window</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-58c4579733b59549392533-6"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">keyboardEvent</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-58c4579733b59549392533-7"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-sy">}</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-58c4579733b59549392533-8"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-58c4579733b59549392533-9">&nbsp;</div><div class="crayon-line" id="crayon-58c4579733b59549392533-10"><span class="crayon-c">// in code, single implementation for phantom or browser</span></div><div class="crayon-line" id="crayon-58c4579733b59549392533-11"><span class="crayon-t">var</span><span class="crayon-h"> </span><span class="crayon-v">event</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-v">window</span><span class="crayon-sy">.</span><span class="crayon-e">KeyboardEvent</span><span class="crayon-sy">(</span><span class="crayon-s">'keypress'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0017 seconds] -->
+<p>This could be pretty dangerous depending on your use case, but at least it&#8217;s isolated to your test. I wasn&#8217;t sure what other method to use, but if you have one I would love to hear it in the comments. Also, Phantom 2.x should fix this, but it wasn&#8217;t an option in this case.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://localhost:8080/category/bugs-fixes/" rel="category tag">Bugs &amp; Fixes</a>, <a href="http://localhost:8080/category/learning/" rel="category tag">Learning</a>, <a href="http://localhost:8080/category/tools/" rel="category tag">Tools</a> and tagged <a href="http://localhost:8080/tag/dom/" rel="tag">DOM</a>, <a href="http://localhost:8080/tag/javascript/" rel="tag">javascript</a>, <a href="http://localhost:8080/tag/phantomjs/" rel="tag">phantomjs</a> on <a href="http://localhost:8080/phantomjs-1-9-and-keyboardevent/" title="7:26 pm" rel="bookmark"><time class="entry-date" datetime="2016-02-09T19:26:08+00:00">February 9, 2016</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://localhost:8080/author/chadcarbert/" title="View all posts by chadcarbert" rel="author">chadcarbert</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-232" class="post-232 post type-post status-publish format-standard has-post-thumbnail hentry category-learning tag-javascript">
+				<header class="entry-header">
+			<img width="624" height="820" src="http://localhost:8080/wp-content/uploads/2016/01/javascript-good-parts-624x820.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://localhost:8080/wp-content/uploads/2016/01/javascript-good-parts-624x820.jpg 624w, http://localhost:8080/wp-content/uploads/2016/01/javascript-good-parts-228x300.jpg 228w, http://localhost:8080/wp-content/uploads/2016/01/javascript-good-parts-779x1024.jpg 779w, http://localhost:8080/wp-content/uploads/2016/01/javascript-good-parts.jpg 822w" sizes="(max-width: 624px) 100vw, 624px" />
+						<h1 class="entry-title">
+				<a href="http://localhost:8080/javascript-the-good-parts/" rel="bookmark">Javascript: The Good Parts</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://localhost:8080/javascript-the-good-parts/#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>It&#8217;s been several months since I read <a href="http://shop.oreilly.com/product/9780596517748.do" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://shop.oreilly.com/product/9780596517748.do', 'Javascript: The Good Parts');">Javascript: The Good Parts</a> but I thought it was worth mentioning that this old classic is an excellent read. It also takes offers a more traditional look at javascript, which is important in understanding why certain changes are being made today.</p>
+<p>We are really quite lucky that things like package managers, module loaders, and javascript features have matured to the point where they are being standardized, and browsers are iterating (as well as the spec) at a rate that is making the language more of a pleasure to use. There are things that are also being added that are difficult or impossible to polyfill like <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/WeakMap" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/WeakMap', 'WeakMap');">WeakMap</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*', 'generators');">generators</a>, that will be fun to play with. Crawford&#8217;s follow-up coverage &#8220;The Better Parts&#8221; I think is best shown at the Nordic.js 2014 conference, check it out:</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/PSGEjv3Tqo0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><em>ps: his take on 
+			<span id="crayon-58c4579733ebb824880902" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-t">class</span></span></span> as being a &#8220;bad part&#8221; is interesting. I don&#8217;t currently have an opinion since it makes sense how it works behind the scenes. I do like the idea of  
+			<span id="crayon-58c4579733ed5377001538" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-t">Object</span><span class="crayon-sy">.</span><span class="crayon-v">create</span></span></span>, and it&#8217;s interesting how he finds 
+			<span id="crayon-58c4579733eea027187924" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-r">this</span></span></span>  as a security flaw and by not using it he didn&#8217;t need to use  
+			<span id="crayon-58c4579733f05773795553" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-t">Object</span><span class="crayon-sy">.</span><span class="crayon-v">create</span></span></span>  which made things even simpler. This might be a bit more of  a &#8220;functional&#8221; approach which is made easier with modules and exports.</em></p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://localhost:8080/category/learning/" rel="category tag">Learning</a> and tagged <a href="http://localhost:8080/tag/javascript/" rel="tag">javascript</a> on <a href="http://localhost:8080/javascript-the-good-parts/" title="12:56 am" rel="bookmark"><time class="entry-date" datetime="2016-01-08T00:56:39+00:00">January 8, 2016</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://localhost:8080/author/chadcarbert/" title="View all posts by chadcarbert" rel="author">chadcarbert</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-228" class="post-228 post type-post status-publish format-standard hentry category-learning category-tools tag-boot2docker tag-docker tag-docker-machine">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://localhost:8080/a-future-without-boot2docker-featuring-docker-machine/" rel="bookmark">A future without boot2docker, featuring Docker Machine</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://localhost:8080/a-future-without-boot2docker-featuring-docker-machine/#comments">5 Replies</a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>Docker has always had a few unofficial documented steps to getting things going on non-linunx environments. It usually went along the lines that if you weren&#8217;t on linux, get linux. This is understandable as docker is using <a href="https://en.wikipedia.org/wiki/LXC" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://en.wikipedia.org/wiki/LXC', 'LXC');">LXC</a> behind the scenes, and that requires linux. A lot of web developers are using Apple hardware with OSX, like myself, and probably felt like it was a little more setup than necessary. Projects like <a href="http://boot2docker.io/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://boot2docker.io/', 'boot2docker');">boot2docker</a> made this way easier but that only solved setting up a docker host, or engine, for windows and Mac OS X. What about all those cloud providers? Pre-built images offered by Digital Ocean, etc&#8230;</p>
+<p>Luckily Docker saw this challenge and abstracted a way to easily setup, from the client. a way to setup any docker engine. It&#8217;s called <a href="https://docs.docker.com/machine/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://docs.docker.com/machine/', 'Docker Machine');">Docker Machine</a>. They even provide <a href="https://docs.docker.com/machine/migrate-to-machine/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://docs.docker.com/machine/migrate-to-machine/', 'migration steps');">migration steps</a> for the boot2docker folk. Now we have an official resource that will work in tandem with docker&#8217;s future plans.</p>
+<p>Getting things going on a Mac is easier than ever, and Docker provides a <a href="https://docs.docker.com/installation/mac/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://docs.docker.com/installation/mac/', 'Toolbox installation');">Toolbox installation</a> that is easy to download and run as an installer. I prefer to avoid installers and as much as possible let <a href="http://brew.sh/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://brew.sh/', 'homebrew');">homebrew</a> handle my dependencies, and manage updates. Assuming you have homebrew already installed (and if you don&#8217;t <a href="http://brew.sh/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://brew.sh/', 'go get it');">go get it</a>, your life will get easier).</p>
+<p><strong>Easy Installation with Homebrew</strong></p>
+<p><i>Prerequisite &#8211; Homebrew Cask installed? Cask lets you install installers via homebrew.</i></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c45797346f4799656447" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c45797346f4799656447-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c45797346f4799656447-1"><span class="crayon-e">brew </span><span class="crayon-e">tap </span><span class="crayon-v">caskroom</span><span class="crayon-o">/</span><span class="crayon-v">cask</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c4579734703739746891" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c4579734703739746891-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c4579734703739746891-1"><span class="crayon-e">brew </span><span class="crayon-e">install </span><span class="crayon-v">caskroom</span><span class="crayon-o">/</span><span class="crayon-v">cask</span><span class="crayon-o">/</span><span class="crayon-v">brew</span><span class="crayon-o">-</span><span class="crayon-v">cask</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p>With Homebrew Cask installed, in your terminal run:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c457973470a867291474" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c457973470a867291474-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c457973470a867291474-1"><span class="crayon-e">brew </span><span class="crayon-e">cask </span><span class="crayon-e">install </span><span class="crayon-v">virtualbox</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p><a href="https://www.virtualbox.org" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.virtualbox.org', 'VirtualBox');">VirtualBox</a> will run the virtual machine that runs linux, which will run Docker. Docker machine supports other means of virtualization, but I&#8217;ve only used VirtualBox as it&#8217;s free and been used for similar purposes by projects like Otto, Vagrant and boot2docker.</p>
+<p>With VirtualBox ready, we just need Docker Machine, in your terminal run:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c4579734711999597294" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c4579734711999597294-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c4579734711999597294-1"><span class="crayon-e">brew </span><span class="crayon-e">install </span><span class="crayon-v">docker</span><span class="crayon-o">-</span><span class="crayon-v">machine</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p>Now you should have access to 
+			<span id="crayon-58c4579734717445814970" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">docker</span><span class="crayon-o">-</span><span class="crayon-v">machine</span></span></span>  on the command line, and we can go ahead and setup a virtual machine that docker can use. Let&#8217;s create a docker engine, in your terminal run:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c457973471d779947134" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c457973471d779947134-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c457973471d779947134-1"><span class="crayon-v">docker</span><span class="crayon-o">-</span><span class="crayon-e">machine </span><span class="crayon-v">create</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-e">driver </span><span class="crayon-e">virtualbox </span><span class="crayon-v">dev</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p>This will create a docker machine named 
+			<span id="crayon-58c4579734723307451528" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">dev</span></span></span>. You can take a look at the docker machines at your disposal by putting  
+			<span id="crayon-58c4579734729689083330" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">docker</span><span class="crayon-o">-</span><span class="crayon-e">machine </span><span class="crayon-v">ls</span></span></span>  in your terminal.</p>
+<p>Now we have a virtual machine, configured with docker, and running. If you restart your computer, or notice that after running 
+			<span id="crayon-58c457973472f743775464" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">docker</span><span class="crayon-o">-</span><span class="crayon-e">machine </span><span class="crayon-v">ls</span></span></span> that the 
+			<span id="crayon-58c4579734736710197926" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">STATE</span></span></span> isn&#8217;t 
+			<span id="crayon-58c457973473c530344435" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">Running</span></span></span> , then all you need to do is run 
+			<span id="crayon-58c4579734742807620214" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">docker</span><span class="crayon-o">-</span><span class="crayon-e">machine </span><span class="crayon-i">start</span> <span class="crayon-v">dev</span></span></span> (in this case 
+			<span id="crayon-58c4579734748263741755" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">dev</span></span></span> denotes the name of the engine).</p>
+<p>The last step is to be able to actually execute commands against our Docker engine, and do things like create containers. As Docker Machine will let you run commands against any number of Docker engines, whether you have multiple virtual machines, cloud instances, your local 
+			<span id="crayon-58c457973474e784305570" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">docker</span></span></span>  command needs to be wired up so that its commands are directed at the correct engine. This is an important distinction so I&#8217;ll repeat that, your local docker client that you access by the 
+			<span id="crayon-58c4579734754455268663" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">docker</span></span></span>  is completely agnostic to the docker engine it is running commands against. The commands could be running against an engine locally, in the cloud, it just needs to be setup to point at the right engine. This makes it really powerful by having one API to manage containers across a slew of engines.</p>
+<p>Docker-machine makes setting up the your docker client easy by:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c457973475a239143268" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c457973475a239143268-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c457973475a239143268-1"><span class="crayon-i">eval</span><span class="crayon-h"> </span><span class="crayon-s">"$(docker-machine env dev)"</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+<p>(dev refers to the docker engine name that you can get from 
+			<span id="crayon-58c4579734760520052100" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">docker</span><span class="crayon-o">-</span><span class="crayon-e">machine </span><span class="crayon-v">ls</span></span></span>). This command is setting up environment variables that your local docker uses, to see exactly what the 
+			<span id="crayon-58c4579734766833602564" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">eval</span></span></span>  is running behind the scenes put just 
+			<span id="crayon-58c457973476d543995982" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">docker</span><span class="crayon-o">-</span><span class="crayon-e">machine </span><span class="crayon-e">env </span><span class="crayon-v">dev</span></span></span> in your terminal.</p>
+<p>With all this setup, you should be able to type 
+			<span id="crayon-58c4579734773834561596" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">docker </span><span class="crayon-v">info</span></span></span> and see all the information your local docker client has about what its current docker engine. At this point you&#8217;re free to use the 
+			<span id="crayon-58c4579734779840568592" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">docker</span></span></span> command and have fun with containerizing your apps.</p>
+<p>Hope this made the Mac OS X with Docker setup a little clearer and easier, and provided a <em>homebrew way</em> of setting things up. If anything didn&#8217;t make sense, or if I need to fix something please let me know! Thanks and Happy Dockering!</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://localhost:8080/category/learning/" rel="category tag">Learning</a>, <a href="http://localhost:8080/category/tools/" rel="category tag">Tools</a> and tagged <a href="http://localhost:8080/tag/boot2docker/" rel="tag">boot2docker</a>, <a href="http://localhost:8080/tag/docker/" rel="tag">docker</a>, <a href="http://localhost:8080/tag/docker-machine/" rel="tag">docker machine</a> on <a href="http://localhost:8080/a-future-without-boot2docker-featuring-docker-machine/" title="10:54 pm" rel="bookmark"><time class="entry-date" datetime="2015-10-04T22:54:36+00:00">October 4, 2015</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://localhost:8080/author/chadcarbert/" title="View all posts by chadcarbert" rel="author">chadcarbert</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-224" class="post-224 post type-post status-publish format-standard hentry category-learning tag-emberjs tag-glimmer tag-javascript">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://localhost:8080/getting-a-handle-on-embers-templating-and-rendering-story/" rel="bookmark">Getting a handle on Ember&#8217;s templating and rendering story</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://localhost:8080/getting-a-handle-on-embers-templating-and-rendering-story/#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>I was at EmberConf 2015 where Tom and Yehuda announced Glimmer in their <a href="https://www.youtube.com/watch?v=o12-90Dm-Qs" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.youtube.com/watch?v=o12-90Dm-Qs', 'keynote');">keynote</a>. They showed off a dbmon implementation of Ember with HTMLbars. While many probably didn&#8217;t notice the performance issues with basic renders prior, this demo quite easily showed the problem and that it could be better. React was proof that a solution was already in hand. Luckily they had been work and an Apple-esque (maybe from Tom&#8217;s days at Apple) announcement of the new rendering engine, Glimmer. Just like that Ember was back in the rendering game as quickly as I had known it wasn&#8217;t.</p>
+<p>Ember&#8217;s templating has seen modest improvements over in recent history, from removing annoying metamorphosis script tags, to HTMLbars, and removing the bindAttr and classBinding, and now with a diffing engine that was even better in implementation than React&#8217;s. What was neat is that Ember was able to pull out specific parts of the template that it could denote as &#8220;dynamic&#8221; and when these values, recursively if necessary, re-render the parts that changed.</p>
+<p>This all seemed like magic, and because behind the scenes the way you wrote your handlebar syntax hadn&#8217;t change (much), it wasn&#8217;t quite obvious what had changed to make Ember so much better. Luckily some recent videos have come out that dive deep into the magic. So deep in fact that I might have to watch the &#8220;HTMLBars Deep Dive&#8221; video again to get a better idea of what is going on architecturally . Take a look at these videos, ordered from least to most granularity:</p>
+<ul>
+<li><a href="https://youtu.be/o12-90Dm-Qs?t=2838" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://youtu.be/o12-90Dm-Qs?t=2838', 'EmberConf 2015 Keynote');">EmberConf 2015 Keynote</a> (at the point where they announce/explain the basics behind Glimmer)</li>
+<li><a href="https://www.youtube.com/watch?v=VY-r7Ac06ho" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.youtube.com/watch?v=VY-r7Ac06ho', 'Inside Glimmer: What Makes Ember&#8217;s Rendering Engine Tick');">Inside Glimmer: What Makes Ember&#8217;s Rendering Engine Tick</a>, with Tom Tom Dale (thanks to FullStack 2015)</li>
+<li><a href="https://www.youtube.com/watch?v=DrFXw0QGDLM" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.youtube.com/watch?v=DrFXw0QGDLM', 'HTMLBars Deep Dive');">HTMLBars Deep Dive</a>, with Yehuda Katz (thanks to <a href="https://www.intercom.io" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.intercom.io', 'Intercom');">Intercom</a>)</li>
+<li><a href="https://www.youtube.com/watch?v=LsUSurw6sg4" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.youtube.com/watch?v=LsUSurw6sg4', 'Angle Bracket Components Sneak Peak');">Angle Bracket Components Sneak Peak</a>, with Yehuda Katz and Godfrey Chan (thanks to Ember SF)</li>
+</ul>
+<p><em>&#8220;Inside Glimmer&#8221; is a perfect precursor to the &#8220;HTMLBars  Deep Dive&#8221;.</em></p>
+<p>It&#8217;s obvious that these are not easy problems to solve, and it&#8217;s great to see Ember continue to to evolve. These ideas aren&#8217;t even completely original, and giving credit to other frameworks, Ember is able to adapt these ideas in a way that makes even better. Thanks to everyone on the core team for their continued work on connecting all the pieces of Ember making it a full featured front-end stack.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://localhost:8080/category/learning/" rel="category tag">Learning</a> and tagged <a href="http://localhost:8080/tag/emberjs/" rel="tag">emberjs</a>, <a href="http://localhost:8080/tag/glimmer/" rel="tag">glimmer</a>, <a href="http://localhost:8080/tag/javascript/" rel="tag">javascript</a> on <a href="http://localhost:8080/getting-a-handle-on-embers-templating-and-rendering-story/" title="4:01 am" rel="bookmark"><time class="entry-date" datetime="2015-10-04T04:01:35+00:00">October 4, 2015</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://localhost:8080/author/chadcarbert/" title="View all posts by chadcarbert" rel="author">chadcarbert</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-221" class="post-221 post type-post status-publish format-standard hentry category-learning category-tools tag-devops tag-docker tag-lamp tag-wordpress">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://localhost:8080/monolith-docker-containers-for-local-development-environments/" rel="bookmark">Monolithic docker containers for local development environments</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://localhost:8080/monolith-docker-containers-for-local-development-environments/#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p><em>This post has an <a href="https://github.com/chadian/wp-docker-experiment" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/chadian/wp-docker-experiment', 'companion github repo');">companion github repo</a> using wordpress as an example, feel free to take a look.</em></p>
+<p>In agency work there isn&#8217;t the same liberty to be able to deploy our lovely isolated docker containers. Often those environments are the clients, and they just want the git repo and the mysql database. This does not excuse developers from doing everything possible to try and match the production environment in their local development environment.</p>
+<p>Often what developers ends up with is a working version of a stack consisting of an apache, mysql and php on their machine. Trying to add extensions or debug someone&#8217;s stack is usually pretty difficult because everyone ends up doing it a different way. Couple this with the fact that working on one environment, with one set of binaries and configuration, often is not going to reflect production in every project. Often things work well enough so these shortcomings are ignored. Configurations to support multiple projects running out of sub-directories with one vhost and .htaccess hacks are often culprits of easily avoided bugs, too.</p>
+<p>What is the solution? I think vagrant comes really close but it&#8217;s a little too heavy and doesn&#8217;t do enough to abstract things like the memory, storage, networking of the vm. Essentially most people just want a <em>container</em> with exposed ports, mounted volumes, and an isolated environment, and that&#8217;s docker. Docker advocates for splitting up your services across multiple containers and that makes a lot of sense. However, I think it might be overkill for these basic php projects that a lot of web agencies get. I think there is a use-case for docker and running everything in a single container that is <em>vm-esque</em>.</p>
+<p>This single-container approach gives you a lot of advantages like tracking your Dockerfile (and any future changes to the docker image) in your git repo, being able to run Docker with your mounted project directory, and just an overall quick and snappy setup. I have an <a href="https://github.com/chadian/wp-docker-experiment" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/chadian/wp-docker-experiment', 'example repo');">example repo</a> if you&#8217;re curious about an implementation of how this would work. Ideally, you would use composer or a some other package manager to track the framework and its dependencies leaving only a Dockerfile, your manifest file declaring your packages, and your application code, in your repo.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://localhost:8080/category/learning/" rel="category tag">Learning</a>, <a href="http://localhost:8080/category/tools/" rel="category tag">Tools</a> and tagged <a href="http://localhost:8080/tag/devops/" rel="tag">devops</a>, <a href="http://localhost:8080/tag/docker/" rel="tag">docker</a>, <a href="http://localhost:8080/tag/lamp/" rel="tag">lamp</a>, <a href="http://localhost:8080/tag/wordpress/" rel="tag">wordpress</a> on <a href="http://localhost:8080/monolith-docker-containers-for-local-development-environments/" title="3:09 pm" rel="bookmark"><time class="entry-date" datetime="2015-10-02T15:09:19+00:00">October 2, 2015</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://localhost:8080/author/chadcarbert/" title="View all posts by chadcarbert" rel="author">chadcarbert</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-214" class="post-214 post type-post status-publish format-standard hentry category-learning tag-javascript">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://localhost:8080/be-careful-with-those-primitives-types/" rel="bookmark">Be careful with those primitives types</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://localhost:8080/be-careful-with-those-primitives-types/#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>This is probably a refresher for most, but I was curious about how js is handling typing. After all we have 
+			<span id="crayon-58c457973540c541641274" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-t">String</span></span></span> , 
+			<span id="crayon-58c457973541a437681291" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">Number</span></span></span> , and 
+			<span id="crayon-58c4579735422580896801" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-t">Boolean</span></span></span>  global objects that have these wonderful prototypes that get us some really handy functions. So we can do something like:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c4579735428022697160" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c4579735428022697160-1">1</div><div class="crayon-num" data-line="crayon-58c4579735428022697160-2">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c4579735428022697160-1"><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-s">"HELLO, I'M TALKING SOFTLY"</span><span class="crayon-sy">.</span><span class="crayon-e">toLowerCase</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-58c4579735428022697160-2"><span class="crayon-c">// hello, i'm talking softly</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0008 seconds] -->
+<p>Neat, and because we have these global objects we can augment their prototypes to give us access to extra methods on every instance. For example:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c457973542f034915798" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c457973542f034915798-1">1</div><div class="crayon-num" data-line="crayon-58c457973542f034915798-2">2</div><div class="crayon-num" data-line="crayon-58c457973542f034915798-3">3</div><div class="crayon-num" data-line="crayon-58c457973542f034915798-4">4</div><div class="crayon-num" data-line="crayon-58c457973542f034915798-5">5</div><div class="crayon-num" data-line="crayon-58c457973542f034915798-6">6</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c457973542f034915798-1"><span class="crayon-t">String</span><span class="crayon-sy">.</span><span class="crayon-v">prototype</span><span class="crayon-sy">.</span><span class="crayon-v">exclamation</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-t">function</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-58c457973542f034915798-2"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-r">this</span><span class="crayon-sy">.</span><span class="crayon-e">toUpperCase</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-s">"!!!"</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-58c457973542f034915798-3"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-58c457973542f034915798-4">&nbsp;</div><div class="crayon-line" id="crayon-58c457973542f034915798-5"><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-s">"hello, I'm talking loudly"</span><span class="crayon-sy">.</span><span class="crayon-e">exclamation</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-58c457973542f034915798-6"><span class="crayon-c">// HELLO, I'M TALKING LOUDLY!!!</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p><a href="http://guides.emberjs.com/v1.10.0/configuring-ember/disabling-prototype-extensions/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://guides.emberjs.com/v1.10.0/configuring-ember/disabling-prototype-extensions/', 'Ember.js augments prototypes');">Ember.js augments prototypes</a> to make things a little easier and to quickly get access to methods without having to pass it into an Ember object. This is something that requires a lot of responsibility, as there is some overhead involved and generally you don&#8217;t want to surprise people who share the environment with you.</p>
+<p>Augmenting prototypes is also useful to polyfill functionality that might not exist, like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Polyfill" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Polyfill', 'Array.map in older versions of IE');">Array.map in older versions of IE</a>.</p>
+<p>Prototypes also help with defining inheritance in javascript. We have useful operators like 
+			<span id="crayon-58c4579735435224334416" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-r">instanceof</span></span></span> and 
+			<span id="crayon-58c457973543b649418935" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">typeof</span></span></span> to help us make sense of these. Where things get tricky is when you have a primitive like 
+			<span id="crayon-58c4579735441572817952" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-s">"hello, I'm talking loudly"</span></span></span> being a string primitive, but also having access to the 
+			<span id="crayon-58c4579735448271638177" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-t">String</span></span></span>  prototype, like how I added the 
+			<span id="crayon-58c457973544e482511507" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">exclamation</span></span></span>  method.</p>
+<p>We would expect that since we are using a method on the 
+			<span id="crayon-58c4579735454368553630" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-t">String</span></span></span> prototype, and that 
+			<span id="crayon-58c457973545a001425415" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-s">"hello, I'm talking loudly"</span></span></span> was able to access it, that &#8220;hello, I&#8217;m talking loudly&#8221; instanceof String would equal true, but it doesn&#8217;t. Oddly enough, typeof &#8220;hello, I&#8217;m talking loudly&#8221; equals &#8220;string&#8221;, and new String(&#8220;hello, I&#8217;m talking loudly&#8221;) instanceof String equals true.</p>
+<p>If all that seems a little confusing it did to me, too. Here is a quick summary of what we&#8217;re looking at:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c4579735460890651279" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c4579735460890651279-1">1</div><div class="crayon-num" data-line="crayon-58c4579735460890651279-2">2</div><div class="crayon-num" data-line="crayon-58c4579735460890651279-3">3</div><div class="crayon-num" data-line="crayon-58c4579735460890651279-4">4</div><div class="crayon-num" data-line="crayon-58c4579735460890651279-5">5</div><div class="crayon-num" data-line="crayon-58c4579735460890651279-6">6</div><div class="crayon-num" data-line="crayon-58c4579735460890651279-7">7</div><div class="crayon-num" data-line="crayon-58c4579735460890651279-8">8</div><div class="crayon-num" data-line="crayon-58c4579735460890651279-9">9</div><div class="crayon-num" data-line="crayon-58c4579735460890651279-10">10</div><div class="crayon-num" data-line="crayon-58c4579735460890651279-11">11</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c4579735460890651279-1"><span class="crayon-c">// using new</span></div><div class="crayon-line" id="crayon-58c4579735460890651279-2"><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-t">String</span><span class="crayon-sy">(</span><span class="crayon-s">"hello world"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-r">instanceof</span><span class="crayon-h"> </span><span class="crayon-t">String</span><span class="crayon-h"> </span><span class="crayon-c">// true</span></div><div class="crayon-line" id="crayon-58c4579735460890651279-3"><span class="crayon-e">tyepof </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-t">String</span><span class="crayon-sy">(</span><span class="crayon-s">"hello world"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-c">// 'object'</span></div><div class="crayon-line" id="crayon-58c4579735460890651279-4">&nbsp;</div><div class="crayon-line" id="crayon-58c4579735460890651279-5"><span class="crayon-c">// primitive</span></div><div class="crayon-line" id="crayon-58c4579735460890651279-6"><span class="crayon-s">"hello world"</span><span class="crayon-h"> </span><span class="crayon-r">instanceof</span><span class="crayon-h"> </span><span class="crayon-t">String</span><span class="crayon-h"> </span><span class="crayon-c">// false</span></div><div class="crayon-line" id="crayon-58c4579735460890651279-7"><span class="crayon-i">typeof</span><span class="crayon-h"> </span><span class="crayon-s">"hello world"</span><span class="crayon-h"> </span><span class="crayon-c">// 'string'</span></div><div class="crayon-line" id="crayon-58c4579735460890651279-8">&nbsp;</div><div class="crayon-line" id="crayon-58c4579735460890651279-9"><span class="crayon-c">// Bonus: without using new</span></div><div class="crayon-line" id="crayon-58c4579735460890651279-10"><span class="crayon-t">String</span><span class="crayon-sy">(</span><span class="crayon-s">"hello world"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-r">instanceof</span><span class="crayon-h"> </span><span class="crayon-t">String</span><span class="crayon-h"> </span><span class="crayon-c">// false</span></div><div class="crayon-line" id="crayon-58c4579735460890651279-11"><span class="crayon-e">tyepof </span><span class="crayon-t">String</span><span class="crayon-sy">(</span><span class="crayon-s">"hello world"</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-c">// 'string'</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0008 seconds] -->
+<p>What is happening is that when you use &#8220;quotes&#8221; or call the function without the operator 
+			<span id="crayon-58c4579735466852627443" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-r">new</span></span></span> you actually are working on the primitive. The primitive isn&#8217;t an Object and therefore can&#8217;t be an instance. When you aren&#8217;t using the 
+			<span id="crayon-58c457973546c904980214" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-r">new</span></span></span> operator, the function is simply returning the primitive. As you might recall, using the 
+			<span id="crayon-58c4579735472376956877" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-r">new</span></span></span> operator on a function uses that function as a constructor and creates an instance that inherits from the function&#8217;s prototype. Check out the MDN resource for a better explanation, but essentially we&#8217;re dealing with an object.</p>
+<p>How are we able to access these method&#8217;s on a prototype then? There is something called &#8220;autoboxing&#8221;, or more commonly as &#8220;primitive wrapper types&#8221;, happening behind the scenes that wires up methods of a literal to its appropriate Function. You can also do things like this transparently where these &#8220;objects&#8221; are handled appropriately:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c4579735479298552805" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c4579735479298552805-1">1</div><div class="crayon-num" data-line="crayon-58c4579735479298552805-2">2</div><div class="crayon-num" data-line="crayon-58c4579735479298552805-3">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c4579735479298552805-1"><span class="crayon-cn">20</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">Number</span><span class="crayon-sy">(</span><span class="crayon-cn">2</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">Number</span><span class="crayon-sy">(</span><span class="crayon-cn">2</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// 42</span></div><div class="crayon-line" id="crayon-58c4579735479298552805-2"><span class="crayon-cn">20</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">Number</span><span class="crayon-sy">(</span><span class="crayon-cn">2</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">2</span><span class="crayon-sy">;</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-c">// 42</span></div><div class="crayon-line" id="crayon-58c4579735479298552805-3"><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">Number</span><span class="crayon-sy">(</span><span class="crayon-cn">20</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">Number</span><span class="crayon-sy">(</span><span class="crayon-cn">2</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">2</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// 42</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0009 seconds] -->
+<p>Interestingly, the 
+			<span id="crayon-58c457973547f824409573" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">typeof</span></span></span>  for each of these ends up being 
+			<span id="crayon-58c4579735485045673913" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-s">'number'</span></span></span></p>
+<p>The way these work also affect comparison operators:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c457973548b039220132" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c457973548b039220132-1">1</div><div class="crayon-num" data-line="crayon-58c457973548b039220132-2">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c457973548b039220132-1"><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-cn">42</span><span class="crayon-h"> </span><span class="crayon-o">==</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">Number</span><span class="crayon-sy">(</span><span class="crayon-cn">42</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">// true</span></div><div class="crayon-line" id="crayon-58c457973548b039220132-2"><span class="crayon-v">console</span><span class="crayon-sy">.</span><span class="crayon-e">log</span><span class="crayon-sy">(</span><span class="crayon-cn">42</span><span class="crayon-h"> </span><span class="crayon-o">===</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">Number</span><span class="crayon-sy">(</span><span class="crayon-cn">42</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// false</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0015 seconds] -->
+<p>In general, everything works the way you would expect it to except when you&#8217;re dealing with matters of &#8220;type&#8221;. If what you have is a string, number, or boolean and it&#8217;s created with the new operator you need to check instanceof String, Number and Function. If it was created as a primitive you need to check typeof value returning &#8216;string&#8217;, &#8216;number&#8217;, &#8216;boolean&#8217;. You could check if either returns true in a helper function, too.</p>
+<p>Check out this <a href="http://stackoverflow.com/questions/4059147/check-if-a-variable-is-a-string" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://stackoverflow.com/questions/4059147/check-if-a-variable-is-a-string', 'stackoverflow post');">stackoverflow post</a> for some good discussion about checking types of string, and how using 
+			<span id="crayon-58c4579735491503415287" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-r">new</span></span></span> shouldn&#8217;t be used considering the confusion and how unnecessary it is. While it might be in bad style I think it illustrates some of the details behind javascript&#8217;s inner workings. Also, I remember reading old javascript examples in books that make use of the new operator to try to ease people in from OOP backgrounds, so you can&#8217;t really escape that this exists. There are <a href="http://adripofjavascript.com/blog/drips/javascripts-primitive-wrapper-objects.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://adripofjavascript.com/blog/drips/javascripts-primitive-wrapper-objects.html', 'some');">some</a> <a href="http://stackoverflow.com/questions/17216847/does-javascript-autobox" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://stackoverflow.com/questions/17216847/does-javascript-autobox', 'interested');">interested</a> <a href="https://www.d.umn.edu/~gshute/cs5741/lectures/javascript/javascript-as-ool.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.d.umn.edu/~gshute/cs5741/lectures/javascript/javascript-as-ool.html', 'reads');">reads</a> on autoboxing/&#8221;primitive wrapper types&#8221; to check out, too.</p>
+<p>Like many parts of javascript there&#8217;s always little gotchas that keep things interesting. Luckily as standards move forward and as people create libraries/frameworks/polyfills to pave the cowpaths, we will end up with an easier way to write javascript. I hope this made sense and if I made any mistakes, or need some clarify anything, please let me know in the comments.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://localhost:8080/category/learning/" rel="category tag">Learning</a> and tagged <a href="http://localhost:8080/tag/javascript/" rel="tag">javascript</a> on <a href="http://localhost:8080/be-careful-with-those-primitives-types/" title="5:48 am" rel="bookmark"><time class="entry-date" datetime="2015-09-21T05:48:25+00:00">September 21, 2015</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://localhost:8080/author/chadcarbert/" title="View all posts by chadcarbert" rel="author">chadcarbert</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-209" class="post-209 post type-post status-publish format-standard hentry category-bugs-fixes tag-raspberry-pi">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://localhost:8080/raspberry-pi-wifi-sleep-issue-with-edimax-ew-7811un/" rel="bookmark">Raspberry Pi wifi sleep issue with Edimax EW-7811Un</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://localhost:8080/raspberry-pi-wifi-sleep-issue-with-edimax-ew-7811un/#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>Although I have been reasonably happy with my current <a href="http://sticksnglue.com/wordpress/finally-airplay-speakers/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://sticksnglue.com/wordpress/finally-airplay-speakers/', 'airplay speaker setup');">airplay speaker setup</a> I ran into some issues where I couldn&#8217;t find the airplay speakers listed. I also couldn&#8217;t 
+			<span id="crayon-58c4579735b53035288745" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">ssh</span></span></span> in, and on the pi directly 
+			<span id="crayon-58c4579735b60665132866" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-v">ifconfig</span></span></span> wasn&#8217;t reporting an IP address either. I found myself having to continually run 
+			<span id="crayon-58c4579735b67984305605" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-e">ifconfig </span><span class="crayon-e">wlan0 </span><span class="crayon-v">up</span></span></span>.</p>
+<p>Turns out the Edimax EW-7811Un wifi adapter on Raspbian has an issue with very conservative power management. A quick google search turned up this <a href="https://www.raspberrypi.org/forums/viewtopic.php?t=61665" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.raspberrypi.org/forums/viewtopic.php?t=61665', 'forum post');">forum post</a> that worked me.</p>
+<p>Essentially create a text file at 
+			<span id="crayon-58c4579735b6e577274575" class="crayon-syntax crayon-syntax-inline  crayon-theme-solarized-light crayon-theme-solarized-light-inline crayon-font-inconsolata" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important;"><span class="crayon-pre crayon-code" style="font-size: 14px !important; line-height: 18px !important;font-size: 14px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><span class="crayon-o">/</span><span class="crayon-v">etc</span><span class="crayon-o">/</span><span class="crayon-v">modprobe</span><span class="crayon-sy">.</span><span class="crayon-v">d</span><span class="crayon-o">/</span><span class="crayon-cn">8192cu.conf</span></span></span> with the contents (may require sudo to write):</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-58c4579735b74548564800" class="crayon-syntax crayon-theme-solarized-light crayon-font-inconsolata crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 10px; margin-bottom: 10px; font-size: 14px !important; line-height: 18px !important;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 18px !important;"><div class="crayon-num" data-line="crayon-58c4579735b74548564800-1">1</div><div class="crayon-num" data-line="crayon-58c4579735b74548564800-2">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 18px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-58c4579735b74548564800-1"><span class="crayon-p"># Disable power management</span></div><div class="crayon-line" id="crayon-58c4579735b74548564800-2"><span class="crayon-i">options</span><span class="crayon-h"> </span><span class="crayon-cn">8192cu</span><span class="crayon-h"> </span><span class="crayon-v">rtw_power_mgnt</span><span class="crayon-o">=</span><span class="crayon-cn">0</span><span class="crayon-h"> </span><span class="crayon-v">rtw_enusbss</span><span class="crayon-o">=</span><span class="crayon-cn">0</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p>Save that, restart, and hopefully all is fixed.</p>
+<p>Another small quirk, but still very happy with everything. In all this I also discovered that <a href="https://github.com/mikebrady/shairport-sync" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/mikebrady/shairport-sync', 'shairport-sync');">shairport-sync</a> had been updated to 2.4 with some bugfixes, yay.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://localhost:8080/category/bugs-fixes/" rel="category tag">Bugs &amp; Fixes</a> and tagged <a href="http://localhost:8080/tag/raspberry-pi/" rel="tag">raspberry pi</a> on <a href="http://localhost:8080/raspberry-pi-wifi-sleep-issue-with-edimax-ew-7811un/" title="3:51 am" rel="bookmark"><time class="entry-date" datetime="2015-08-30T03:51:51+00:00">August 30, 2015</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://localhost:8080/author/chadcarbert/" title="View all posts by chadcarbert" rel="author">chadcarbert</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+							
+	<article id="post-205" class="post-205 post type-post status-publish format-standard hentry category-learning category-projects category-toys">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://localhost:8080/finally-airplay-speakers/" rel="bookmark">Finally, AirPlay Speakers</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://localhost:8080/finally-airplay-speakers/#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>I&#8217;ve been toying with getting my airplay speakers setup with right combination of pieces and parts over the past few years and I&#8217;m happy to report that my tinkering has paid off. My last attempt which I didn&#8217;t report involved using <a href="http://www.runeaudio.com/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.runeaudio.com/', 'Rune Audio');" title="Rune Audio">Rune Audio</a>, an ambitious attempt to consolidate the OS, audio drivers, media integrations (including airplay and spotify!), all wrapped in an easy to access web interface. Who wouldn&#8217;t want a one-stop install and get everything setup with all the bells and whistles.</p>
+<p>Unfortunately, even with pushing through to the latest on their master branch I wasn&#8217;t able to get a solid experience out of Rune Audio. The UI was slightly buggy, and more frustrating was the dropping of airplay, and although it seems they might have fixed some of these issues I wanted something more barebones. The more I thought about it the more I realized I just wanted airplay. I didn&#8217;t need a web interface for this thing, I would use my phone or mac and simply use that for controlling, so much easier. If I want spotify, I&#8217;ll airplay spotify.</p>
+<p>So, it was back to the drawing board. I started with a fresh install of raspbian, setup the wifi dongle, setup the audio configuration to default to my USB DAC, and lastly setup shairport. My previous instructions were for shairport 1.0, but since then there&#8217;s a <a href="https://github.com/mikebrady/shairport-sync" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/mikebrady/shairport-sync', 'brand new fork');">brand new fork</a> in town and it&#8217;s awesome. It&#8217;s called <a href="https://github.com/mikebrady/shairport-sync" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/mikebrady/shairport-sync', 'Shairport Sync');">Shairport Sync</a> and it allows you to sync to multiple sources (ie: multi-room setup) so that every airplay receiver running shairport sync is kept, well, synchronized. I only have the one device, so this wasn&#8217;t something I really needed but aside from this new feature it was just <em>so much easier</em> to install and setup. My previous instructions for the 1.x required some interpretation, but this setup worked perfectly based on the github instructions.</p>
+<p>Happy to say that my idea of a stable, custom AirPlay speaker setup is finally complete with a raspberry pi, raspbian, audio USB DAC, wifi dongle, and shairport sync.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://localhost:8080/category/learning/" rel="category tag">Learning</a>, <a href="http://localhost:8080/category/projects/" rel="category tag">Projects</a>, <a href="http://localhost:8080/category/toys/" rel="category tag">Toys</a> on <a href="http://localhost:8080/finally-airplay-speakers/" title="7:27 am" rel="bookmark"><time class="entry-date" datetime="2015-08-01T07:27:01+00:00">August 1, 2015</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://localhost:8080/author/chadcarbert/" title="View all posts by chadcarbert" rel="author">chadcarbert</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+			
+					<nav id="nav-below" class="navigation" role="navigation">
+			<h3 class="assistive-text">Post navigation</h3>
+			<div class="nav-previous"><a href="http://localhost:8080/page/2/" ><span class="meta-nav">&larr;</span> Older posts</a></div>
+			<div class="nav-next"></div>
+		</nav><!-- .navigation -->
+	
+		
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://localhost:8080/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></aside><aside id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>March 2017</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://localhost:8080/2016/05/">&laquo; May</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="2" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+	</tr>
+	<tr>
+		<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td id="today">11</td><td>12</td>
+	</tr>
+	<tr>
+		<td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+	</tr>
+	<tr>
+		<td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+	</tr>
+	<tr>
+		<td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+		<td class="pad" colspan="2">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://localhost:8080/quickly-serve-html-files-from-node-php-or-python/">Quickly serve html files from node, php, or python</a>
+						</li>
+					<li>
+				<a href="http://localhost:8080/js-puzzles/">js puzzle</a>
+						</li>
+					<li>
+				<a href="http://localhost:8080/phantomjs-1-9-and-keyboardevent/">PhantomJS 1.9 and KeyboardEvent</a>
+						</li>
+					<li>
+				<a href="http://localhost:8080/javascript-the-good-parts/">Javascript: The Good Parts</a>
+						</li>
+					<li>
+				<a href="http://localhost:8080/a-future-without-boot2docker-featuring-docker-machine/">A future without boot2docker, featuring Docker Machine</a>
+						</li>
+				</ul>
+		</aside>		<aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Markus</span> on <a href="http://localhost:8080/a-future-without-boot2docker-featuring-docker-machine/#comment-118">A future without boot2docker, featuring Docker Machine</a></li><li class="recentcomments"><span class="comment-author-link">Sen</span> on <a href="http://localhost:8080/a-future-without-boot2docker-featuring-docker-machine/#comment-117">A future without boot2docker, featuring Docker Machine</a></li><li class="recentcomments"><span class="comment-author-link">Vitaliy Kaplich</span> on <a href="http://localhost:8080/source-code-pro-phpstorm-the-plot-thickens/#comment-116">Source Code Pro &#038; PhpStorm, the plot thickens</a></li><li class="recentcomments"><span class="comment-author-link">walid</span> on <a href="http://localhost:8080/a-future-without-boot2docker-featuring-docker-machine/#comment-115">A future without boot2docker, featuring Docker Machine</a></li><li class="recentcomments"><span class="comment-author-link">chadcarbert</span> on <a href="http://localhost:8080/a-future-without-boot2docker-featuring-docker-machine/#comment-114">A future without boot2docker, featuring Docker Machine</a></li></ul></aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://localhost:8080/2016/05/'>May 2016</a></li>
+	<li><a href='http://localhost:8080/2016/04/'>April 2016</a></li>
+	<li><a href='http://localhost:8080/2016/02/'>February 2016</a></li>
+	<li><a href='http://localhost:8080/2016/01/'>January 2016</a></li>
+	<li><a href='http://localhost:8080/2015/10/'>October 2015</a></li>
+	<li><a href='http://localhost:8080/2015/09/'>September 2015</a></li>
+	<li><a href='http://localhost:8080/2015/08/'>August 2015</a></li>
+	<li><a href='http://localhost:8080/2015/05/'>May 2015</a></li>
+	<li><a href='http://localhost:8080/2015/02/'>February 2015</a></li>
+	<li><a href='http://localhost:8080/2014/09/'>September 2014</a></li>
+	<li><a href='http://localhost:8080/2014/04/'>April 2014</a></li>
+	<li><a href='http://localhost:8080/2014/01/'>January 2014</a></li>
+	<li><a href='http://localhost:8080/2013/12/'>December 2013</a></li>
+	<li><a href='http://localhost:8080/2013/11/'>November 2013</a></li>
+	<li><a href='http://localhost:8080/2013/10/'>October 2013</a></li>
+	<li><a href='http://localhost:8080/2013/09/'>September 2013</a></li>
+	<li><a href='http://localhost:8080/2013/07/'>July 2013</a></li>
+	<li><a href='http://localhost:8080/2013/06/'>June 2013</a></li>
+	<li><a href='http://localhost:8080/2013/05/'>May 2013</a></li>
+	<li><a href='http://localhost:8080/2013/04/'>April 2013</a></li>
+	<li><a href='http://localhost:8080/2012/12/'>December 2012</a></li>
+		</ul>
+		</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-4"><a href="http://localhost:8080/category/blurb/" >Blurbs</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://localhost:8080/category/bugs-fixes/" >Bugs &amp; Fixes</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://localhost:8080/category/design-2/" >Design</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://localhost:8080/category/learning/" >Learning</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://localhost:8080/category/projects/" >Projects</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://localhost:8080/category/tales/" >Tales</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://localhost:8080/category/tools/" >Tools</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://localhost:8080/category/toys/" >Toys</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://localhost:8080/category/uncategorized/" >Uncategorized</a>
+</li>
+		</ul>
+</aside>		</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://localhost:8080/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='http://localhost:8080/wp-includes/js/wp-embed.min.js?ver=4.7.3'></script>
+</body>
+</html>
